@@ -9,6 +9,7 @@ class PromotionPage():
     _password_field = 'input[name="password"]'
     _first_name_field = 'input[name="firstName"]'
     _last_name_field = 'input[name="lastName"]'
+    _phone_field = 'input[name="phone"]'
 
 
     def get_email_field(self):
@@ -23,6 +24,9 @@ class PromotionPage():
     def get_last_name_field(self):
         return self.driver.find_element(By.CSS_SELECTOR, self._last_name_field)
 
+    def get_phone_field(self):
+        return self.driver.find_element(By.CSS_SELECTOR, self._phone_field)
+
     ''' actions with web elements '''
 
     def input_email(self, email):
@@ -36,3 +40,6 @@ class PromotionPage():
 
     def input_last_name(self, last_name):
         self.get_last_name_field().send_keys(last_name)
+
+    def input_phone(self, phone_number):
+        self.get_phone_field().send_keys(phone_number)

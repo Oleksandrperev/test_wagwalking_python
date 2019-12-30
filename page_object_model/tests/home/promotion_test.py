@@ -42,6 +42,9 @@ class First_test(unittest.TestCase):
 
         promotion_page.input_last_name('Ivanov')
 
+        promotion_page.input_phone('2222222222')
+
+
         #sleep method (sleep 3 sec)
         time.sleep(3)
 
