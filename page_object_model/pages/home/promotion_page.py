@@ -43,3 +43,10 @@ class PromotionPage():
 
     def input_phone(self, phone_number):
         self.get_phone_field().send_keys(phone_number)
+
+    def complete_promotion_form(self, email, password, first_name, last_name, phone_number):
+        self.input_email(email)
+        self.input_password(password)
+        self.input_first_name(first_name)
+        self.input_last_name(last_name)
+        self.input_phone(phone_number)

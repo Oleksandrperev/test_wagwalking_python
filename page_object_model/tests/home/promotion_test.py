@@ -22,15 +22,7 @@ class First_test(BaseTest, unittest.TestCase):
 
         promotion_page = login_page.click_promo_button()
 
-        promotion_page.input_email("alex@gmail.com")
-
-        promotion_page.input_password("1234567a")
-
-        promotion_page.input_first_name('Oleksandr')
-
-        promotion_page.input_last_name('Ivanov')
-
-        promotion_page.input_phone('2222222222')
+        promotion_page.complete_promotion_form('olex@gmail.com', '1234567a', 'Olex', 'Ivanov', '2222222222')
 
         #sleep method (sleep 1 sec)
         time.sleep(1)
