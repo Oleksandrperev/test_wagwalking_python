@@ -5,7 +5,7 @@ from page_object_model.pages.home.home_page import HomePage
 from page_object_model.tests.home.base_test import BaseTest
 
 
-class First_test(BaseTest, unittest.TestCase):
+class PromotionTest(BaseTest, unittest.TestCase):
 
     def test_promotion(self):
 

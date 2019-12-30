@@ -3,7 +3,8 @@ import unittest
 from selenium.webdriver.common.by import By
 import time
 
-class First_test(unittest.TestCase):
+
+class FirstTest(unittest.TestCase):
 
     driver_path = '/Users/oleksandr/automation/drivers/chromedriver'
     base_url = 'https://wagwalking.com/'
@@ -30,7 +31,7 @@ class First_test(unittest.TestCase):
         first_walk_free_button = driver.find_element(By.CSS_SELECTOR, 'p.sc-ifAKCX.yeXEn')
         first_walk_free_button.click()
 
-        #sleep method (sleep 3 sec)
+        # sleep method (sleep 3 sec)
         time.sleep(3)
 
         driver.quit()
@@ -38,5 +39,3 @@ class First_test(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-
