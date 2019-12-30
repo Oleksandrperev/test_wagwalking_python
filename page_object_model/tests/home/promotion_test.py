@@ -31,10 +31,16 @@ class First_test(unittest.TestCase):
         '''
 
         login_page = HomePage(driver)
+
         promotion_page = login_page.click_promo_button()
+
         promotion_page.input_email("alex@gmail.com")
+
         promotion_page.input_password("1234567a")
+
         promotion_page.input_first_name('Oleksandr')
+
+        promotion_page.input_last_name('Ivanov')
 
         #sleep method (sleep 3 sec)
         time.sleep(3)
