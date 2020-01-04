@@ -1,4 +1,3 @@
-from selenium import webdriver
 import unittest
 import time
 from page_object_model.pages.home.home_page import HomePage

@@ -50,3 +50,9 @@ class PromotionPage():
         self.input_first_name(first_name)
         self.input_last_name(last_name)
         self.input_phone(phone_number)
+
+    def click_email_field(self):
+        self.get_email_field().click()
+
+    def click_password_field(self):
+        self.get_password_field().click()
